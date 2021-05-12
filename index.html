@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okcat</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/09a2207de7.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,24 +18,32 @@
         <div id="login">
             <p>Already have an account?</p>
             <button id="login-btn">
-                Sign In
+                <a href="#">Sign In</a>
             </button>
         </div>
     </nav>
 
     <main>
         <aside>
-            <img src="https://images.pexels.com/photos/6843678/pexels-photo-6843678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="main image" />
+            <img src="./images/okcat-try.svg" alt="">
         </aside>
         <article>
-            <h1>Welcome to OkCat</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et augue at risus laoreet maximus sed nec sem. Sed pharetra dictum purus et blandit. Pellentesque ut libero sed turpis commodo dapibus. Quisque tincidunt, sapien quis sagittis tristique, quam metus porttitor nunc, in mattis urna sem ac diam. Mauris mi nibh, mattis quis ex nec, varius porttitor turpis. Curabitur rhoncus enim eu ipsum pulvinar, in ornare mauris posuere. Aenean sit amet ipsum sed eros gravida porttitor. Cras at urna et ipsum bibendum porttitor. Morbi vestibulum vel erat in sodales. Quisque lacus lectus, lacinia vitae massa ac, facilisis tristique dui. Duis id finibus eros. Nulla facilisi.</p>
+            <div id="main-description">
+                <h1>Welcome to OkCat</h1>
+                <p>The first ever dating app for cats.
+                </p>
+
+                <div id="main-btns">
+                    <button id="create-acc-btn">Create account</button>
+                    <a href="#" id="user-testimonies-btn">User Testimonies</a>                    
+                </div>
+            </div>
         </article>
     </main>
 
     <div id="thumbnails">
         <div id="thumbnails-img">
-            <img src="https://images.pexels.com/photos/6843678/pexels-photo-6843678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="main article thumbnail" />
+            <img src="./images/okcat-try.svg" alt="">
             <img src="https://images.pexels.com/photos/6843678/pexels-photo-6843678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="second article thumbnail" />
             <img src="https://images.pexels.com/photos/6843678/pexels-photo-6843678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="third article thumbnail" />            
         </div>
@@ -42,61 +52,74 @@
 
     <article id="user-testimonies">
         <h2>Testimonies</h2>
-        <div id="testimonies-one" class="testimonies">
-            <div id="testimonies-img">
-                <img src="https://images.pexels.com/photos/6843678/pexels-photo-6843678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="User Image" class="testimonies-img"/>
-                <p class="user-name">Name</p>
-                <p class="user-location">Location</p>
+        <div id="testimonies-slide">
+            <div id="testimonies-one" class="testimonies">
+
+                <div id="user">
+                    <div class="user-desc">
+                        <div id="testimonies-img">
+                            <img src="https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="User Image" class="testimonies-img"/>
+                        </div>
+                        <div id="user-pf">
+                            <p class="user-name">Jill M.</p>
+                            <p class="user-location"><i class="fas fa-map-marker-alt"></i> New York</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="testimonies-desc">
+                    <p>I love this app! At first, I was hesitant to try it since the idea seemed a bit silly but it has been an amazing experience. My cat, Minnie, has found a partner, Ron, and I couldnt be happier. They go on little cat dates and it's very fun. It is also very easy to use. Just <em>swipe up</em> if you are interested, and <em>swipe down</em> if you're not. I would highly recommend it. My friends have already started to use the app and I couldn't be happier. 
+                    </p>
+                </div>
+
             </div>
-            <div id="testimonies-desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et augue at risus laoreet maximus sed nec sem. Sed pharetra dictum purus et blandit. Pellentesque ut libero sed turpis commodo dapibus. Quisque tincidunt, sapien quis sagittis tristique, quam metus porttitor nunc, in mattis urna sem ac diam. Mauris mi nibh, mattis quis ex nec, varius porttitor turpis. Curabitur rhoncus enim eu ipsum pulvinar, in ornare mauris posuere. Aenean sit amet ipsum sed eros gravida porttitor. Cras at urna et ipsum bibendum porttitor. Morbi vestibulum vel erat in sodales. Quisque lacus lectus, lacinia vitae massa ac, facilisis tristique dui. Duis id finibus eros. Nulla facilisi.
-                </p>
-            </div>
+    
+            <!-- <div id="testimonies-two" class="testimonies">
+                <div id="testimonies-img">
+                    <img src="https://images.pexels.com/photos/6843678/pexels-photo-6843678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="User Image" class="testimonies-img"/>
+                    <p class="user-name">Name</p>
+                    <p class="user-location">Location</p>
+                </div>
+                <div id="testimonies-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et augue at risus laoreet maximus sed nec sem. Sed pharetra dictum purus et blandit. Pellentesque ut libero sed turpis commodo dapibus. Quisque tincidunt, sapien quis sagittis tristique, quam metus porttitor nunc, in mattis urna sem ac diam. Mauris mi nibh, mattis quis ex nec, varius porttitor turpis. Curabitur rhoncus enim eu ipsum pulvinar, in ornare mauris posuere. Aenean sit amet ipsum sed eros gravida porttitor. Cras at urna et ipsum bibendum porttitor. Morbi vestibulum vel erat in sodales. Quisque lacus lectus, lacinia vitae massa ac, facilisis tristique dui. Duis id finibus eros. Nulla facilisi.
+                    </p>
+                </div>
+            </div> -->
+    
+            <!-- <div id="testimonies-three" class="testimonies">
+                <div id="testimonies-img">
+                    <img src="https://images.pexels.com/photos/6843678/pexels-photo-6843678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="User Image" class="testimonies-img"/>
+                    <p class="user-name">Name</p>
+                    <p class="user-location">Location</p>
+                </div>
+                <div id="testimonies-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et augue at risus laoreet maximus sed nec sem. Sed pharetra dictum purus et blandit. Pellentesque ut libero sed turpis commodo dapibus. Quisque tincidunt, sapien quis sagittis tristique, quam metus porttitor nunc, in mattis urna sem ac diam. Mauris mi nibh, mattis quis ex nec, varius porttitor turpis. Curabitur rhoncus enim eu ipsum pulvinar, in ornare mauris posuere. Aenean sit amet ipsum sed eros gravida porttitor. Cras at urna et ipsum bibendum porttitor. Morbi vestibulum vel erat in sodales. Quisque lacus lectus, lacinia vitae massa ac, facilisis tristique dui. Duis id finibus eros. Nulla facilisi.
+                    </p>
+                </div>
+            </div> -->
         </div>
-
-        <!-- <div id="testimonies-two" class="testimonies">
-            <div id="testimonies-img">
-                <img src="https://images.pexels.com/photos/6843678/pexels-photo-6843678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="User Image" class="testimonies-img"/>
-                <p class="user-name">Name</p>
-                <p class="user-location">Location</p>
-            </div>
-            <div id="testimonies-desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et augue at risus laoreet maximus sed nec sem. Sed pharetra dictum purus et blandit. Pellentesque ut libero sed turpis commodo dapibus. Quisque tincidunt, sapien quis sagittis tristique, quam metus porttitor nunc, in mattis urna sem ac diam. Mauris mi nibh, mattis quis ex nec, varius porttitor turpis. Curabitur rhoncus enim eu ipsum pulvinar, in ornare mauris posuere. Aenean sit amet ipsum sed eros gravida porttitor. Cras at urna et ipsum bibendum porttitor. Morbi vestibulum vel erat in sodales. Quisque lacus lectus, lacinia vitae massa ac, facilisis tristique dui. Duis id finibus eros. Nulla facilisi.
-                </p>
-            </div>
-        </div> -->
-
-        <!-- <div id="testimonies-three" class="testimonies">
-            <div id="testimonies-img">
-                <img src="https://images.pexels.com/photos/6843678/pexels-photo-6843678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="User Image" class="testimonies-img"/>
-                <p class="user-name">Name</p>
-                <p class="user-location">Location</p>
-            </div>
-            <div id="testimonies-desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et augue at risus laoreet maximus sed nec sem. Sed pharetra dictum purus et blandit. Pellentesque ut libero sed turpis commodo dapibus. Quisque tincidunt, sapien quis sagittis tristique, quam metus porttitor nunc, in mattis urna sem ac diam. Mauris mi nibh, mattis quis ex nec, varius porttitor turpis. Curabitur rhoncus enim eu ipsum pulvinar, in ornare mauris posuere. Aenean sit amet ipsum sed eros gravida porttitor. Cras at urna et ipsum bibendum porttitor. Morbi vestibulum vel erat in sodales. Quisque lacus lectus, lacinia vitae massa ac, facilisis tristique dui. Duis id finibus eros. Nulla facilisi.
-                </p>
-            </div>
-        </div> -->
     </article>
 
     <!-- footer  -->
     <footer>
-        <div id="follow-us-icons">
-            <p>follow us:</p>
-            <div id="follow-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-tiktok"></i>
-                <i class="fab fa-youtube"></i>
+        <div id="icons-div">
+            <div id="follow-us-icons">
+                <p>follow us:</p>
+                <div id="follow-icons">
+                    <a href="#" class="my-icons"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="my-icons"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="my-icons"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="my-icons"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="my-icons"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
-        </div>
-
-        <div id="download-section">
-            <p>Download the app today!</p>
-            <div id="download-icons">
-                <i class="fab fa-app-store-ios"></i>
-                <i class="fab fa-google-play"></i>
+    
+            <div id="download-section">
+                <p>Download the app today!</p>
+                <div id="download-icons">
+                    <a href="#" class="my-icons"><i class="fab fa-app-store-ios"></i></a>
+                    <a href="#" class="my-icons"><i class="fab fa-google-play"></i></a>
+                </div>
             </div>
         </div>
     </footer>
