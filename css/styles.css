@@ -189,6 +189,10 @@ main article {
     justify-content: center;
     align-items: center;
 }
+
+#testimonies-slide {
+    position: relative;
+}
 /* footer  */
 
 
