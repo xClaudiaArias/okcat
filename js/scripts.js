@@ -1,24 +1,28 @@
-// let slides = document.querySelectorAll(".testimonies")
+// let slides = document.querySelectorAll(".testimonies");
 
-function sliderTimer () {
-    let slideIndex = 1;
-    let currentSlide = slideIndex - 1;
 
-    slides.forEach(slide => {
-        slide.style.display = 'none';
-    })
 
-    setTimeout(function(){
-        if (slideIndex > slides.length){
-            slideIndex = 1;
-        }
-        if (slideIndex < 1){
-            slideIndex = slides.length
-        }
-        slideIndex += 1;
-        slides[slideIndex].style.display = "block";
-        console.log(slideIndex, 'slideIndex')
-    }, 3000)
+let slideIndex = 0;
+
+
+const slideShow = () => {
+    let slides = document.querySelectorAll(".testimonies");
+
+    for (let i = 0; i < slides.length; i++){
+        slides[i].style.display = 'none'
+    }
+    
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }  
+
+    slides[slideIndex-1].style.display = "block"; 
+
+    setTimeout(slideShow, 3000)
 }
 
-sliderTimer()
+slideShow()
+
+
