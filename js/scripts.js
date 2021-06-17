@@ -1,12 +1,8 @@
-// let slides = document.querySelectorAll(".testimonies");
-
-
-
+let slides = document.querySelectorAll(".testimonies");
 let slideIndex = 0;
 
 
 const slideShow = () => {
-    let slides = document.querySelectorAll(".testimonies");
 
     for (let i = 0; i < slides.length; i++){
         slides[i].style.display = 'none'

@@ -131,7 +131,7 @@ main article {
 
 article h2 {
     text-align: center;
-    margin: 50px 0;
+    margin: 100px 0;
 }
 
 #user-testimonies {
@@ -143,8 +143,8 @@ article h2 {
 
 #user-testimonies .testimonies {
     display: flex;
-    height: 480px;
     border: dashed 2px red;
+    height: 500px;
 }
 
 #user {
@@ -153,6 +153,7 @@ article h2 {
     align-items: center;
     width: 40%;
     text-align: center;
+    /* border: blue dashed 2px; */
 }
 
 .user-name {
@@ -183,12 +184,16 @@ article h2 {
     border: 1px solid orange;
 }
 
+.testimonies {
+    display: flex;
+}
+
 #user-words {
-    height: inherit;
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid green;
 }
 
 #testimonies-desc {
