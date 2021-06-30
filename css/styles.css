@@ -12,13 +12,14 @@ body {
 
 nav {
     width: 100%;
-    height:  50px;
+    height:  70px;
     display: flex;
     justify-content: space-between;
     position: fixed;
     padding: 0 80px;
     font-size: 14px;
     color: rgb(66, 66, 66);
+    background-color: #5ED8E8;
 }
 
 nav #logo {
@@ -26,7 +27,7 @@ nav #logo {
     justify-content: center;
     align-items: center;
     font-family: 'Marker Felt';
-    font-size: 33px;
+    font-size: 24px;
     font-weight: 100;
     font-stretch: normal;
     font-style: normal;
@@ -48,22 +49,21 @@ nav #login {
     background-color: none;
 }
 
-#sign-in {
-    color: #5f3d2b;
-}
-
-
-#login div a:hover {
-    text-decoration: underline;
-}
-
 #sign-in-btn {
+    color: #5f3d2b;
     width: 79px;
     height: 26px;
     margin: 11px 0;
     border-radius: 13px;
     border: solid 1px #ff64d5;
     background-color: #fff690;
+}
+
+#sign-in-btn:hover {
+    color: #3b2316;
+    background-color: #ffe695;
+    border: solid 1px #db44b3;
+    text-decoration: none;
 }
 
 /* ----- Main  */
@@ -102,10 +102,8 @@ main article {
     font-family: 'Marker Felt';
     width: 322px;
     height: 139px;
-    -webkit-backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
     text-shadow: 0 11px 0 rgba(60, 7, 52, 0.74);
-    -webkit-text-stroke: 6px #403b09;
+    -webkit-text-stroke: 8px #403b09;
     font-size: 128px;
     font-weight: 100;
     font-stretch: normal;
@@ -121,7 +119,7 @@ main article {
     width: 634px;
     height: 71px;
     font-family: Rockwell;
-    font-size: 29px;
+    font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -134,31 +132,44 @@ main article {
 /* buttons  */
 
 #main-btns {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
-#user-testimonies-btn {
+#create-account-btn {
     width: 208px;
     height: 24px;
     margin: 25px 0 11px 27.5px;
     font-family: Rockwell;
-    font-size: 23px;
+    font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.43;
     letter-spacing: normal;
     text-align: center;
-    color: #005050;
+    color: #1f8080;
+    text-decoration: none;
 }
 
-#create-acc-btn {
-    background-color: #AAE8FE;
-    width: 200px;
-    height: 50px;
+#download-app {
+    color: #5642EB;
+    width: 240px;
+    height: 40px;
+    font-family: 'Rockwell';
     font-size: 18px;
-    border: none;
-    border-radius: 50px;
+    border: 3px #5642EB solid;
+    border-top-left-radius: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 40px;
+    box-shadow: 0 11px 0 #403b09;
+    background: rgb(255,100,213);
+    background: linear-gradient(90deg, rgba(255,100,213,1) 0%, rgba(255,246,144,1) 100%);
+}
+
+#download-app:hover {
+    transform:  translate(0, 2px);
+    box-shadow: 0 7px 0 #403b09;
 }
 
 /* THUMBNAILS  */
