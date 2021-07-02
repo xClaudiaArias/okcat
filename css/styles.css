@@ -199,29 +199,29 @@ main article {
 
 article h2 {
     text-align: center;
-    margin: 100px 0;
+    margin: 100px 0 20px;
 }
 
 #user-testimonies {
-    width: 100%;
-    height: 660px;
-    padding: 0 80px;
-    display: flex;
+    margin: 0 auto;
+    width: 1248px;
+    height: 560px;
+    border: 2px solid red;
 }
 
-#user-testimonies .testimonies {
-    display: flex;
-    border: dashed 2px red;
+#user-testimonies > #testimonies-slide  {
+    border: dashed 2px green;
     height: 500px;
+    width: 1248px;
 }
 
 #user {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
     text-align: center;
-    /* border: blue dashed 2px; */
+    border: blue dashed 2px;
+    width: 400px;
 }
 
 .user-name {
@@ -232,19 +232,6 @@ article h2 {
     font-size: 13px;
 }
 
-.fa-map-marker-alt {
-    font-size: 10px;
-}
-
-.testimonies #user-words #testimonies-desc {
-    flex: 1;
-}
-
-#user-testimonies h2 {
-    text-align: center;
-    padding-top: 120px;
-}
-
 .testimonies-img {
     width: 300px;
     height: 300px;
@@ -252,26 +239,16 @@ article h2 {
     border: 1px solid orange;
 }
 
-.testimonies {
-    display: flex;
-}
-
 #user-words {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 40%;
     border: 2px solid green;
 }
 
-#testimonies-desc {
+#testimonies-desc p {
     text-align: center;
     /* border: solid red 2px; */
     padding: 0 20px;
-}
-
-#testimonies-slide {
-    position: relative;
+    float: right;
 }
 
 .fa-star {
