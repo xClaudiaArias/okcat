@@ -1,24 +1,24 @@
-let slides = document.querySelectorAll(".testimonies");
-let slideIndex = 0;
+// let slides = document.querySelectorAll(".testimonies");
+// let slideIndex = 0;
 
 
-const slideShow = () => {
+// const slideShow = () => {
 
-    for (let i = 0; i < slides.length; i++){
-        slides[i].style.display = 'none'
-    }
+//     for (let i = 0; i < slides.length; i++){
+//         slides[i].style.display = 'none'
+//     }
     
-    slideIndex++;
+//     slideIndex++;
 
-    if (slideIndex > slides.length) {
-        slideIndex = 1
-    }  
+//     if (slideIndex > slides.length) {
+//         slideIndex = 1
+//     }  
 
-    slides[slideIndex-1].style.display = "block"; 
+//     slides[slideIndex-1].style.display = "block"; 
 
-    setTimeout(slideShow, 3000)
-}
+//     setTimeout(slideShow, 3000)
+// }
 
-slideShow()
+// slideShow()
 
 

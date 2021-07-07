@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/09a2207de7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet/less" type="text/css" href="./css/styles.less" />
+    <script src="//cdn.jsdelivr.net/npm/less@4.1.1" ></script>
 </head>
 <body>
     <nav>
@@ -16,26 +18,29 @@
         <p id="logo">OkCat</p>
 
         <div id="login">
-            <p>Already have an account?</p>
-            <div id="login-btn">
-                <button id="sign-in-btn">Sign In</button>
-            </div>
+            <p>Already have an account? 
+                <a id="sign-in-btn" href="#">Sign In</a>
+            </p>
         </div>
     </nav>
 
     <main>
         <aside>
-            <img src="./images/okcat-try.svg" alt="">
+            <img src="https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
         </aside>
+
         <article>
             <div id="main-description">
                 <h1>OkCAT</h1>
-                <p>Introducing the world’s first and best app
+                <p> 
+                    Introducing the world’s first and best app
                     designed for cats to date and make friends.
                 </p>
 
                 <div id="main-btns">
-                    <button id="download-app">Download the app</button>
+                    <button id="download-app">
+                        <p>Download the app</p>
+                    </button>
                     <a href="#" id="create-account-btn">Create an account</a>                    
                 </div>
             </div>
@@ -148,6 +153,22 @@
 
     </article>
 
+
+    <!-- DOWNLOAD APP section  -->
+
+    <section>
+        <h2>Download App</h2>
+
+        <div id="links">
+            <a href="#" class="my-icons"><i class="fab fa-app-store-ios"></i></a>
+            <a href="#" class="my-icons"><i class="fab fa-google-play"></i></a>
+        </div>
+
+        <div id="download image">
+            <img src="" alt="">
+        </div>
+    </section>
+
     <!-- footer  -->
     <footer>
         <div id="icons-div">
@@ -159,14 +180,6 @@
                     <a href="#" class="my-icons"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="my-icons"><i class="fab fa-tiktok"></i></a>
                     <a href="#" class="my-icons"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-    
-            <div id="download-section">
-                <p>Download the app today!</p>
-                <div id="download-icons">
-                    <a href="#" class="my-icons"><i class="fab fa-app-store-ios"></i></a>
-                    <a href="#" class="my-icons"><i class="fab fa-google-play"></i></a>
                 </div>
             </div>
         </div>
