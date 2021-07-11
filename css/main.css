@@ -16,6 +16,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #016471;
+  position: fixed;
 }
 nav #logo {
   width: 48px;
@@ -32,22 +34,23 @@ nav #login p {
   line-height: 1.38;
   letter-spacing: normal;
   text-align: left;
-  color: #707070;
+  color: #016471;
 }
 nav #login p #sign-in-btn {
   font-weight: 900;
   text-decoration: none;
-  color: #707070;
+  color: #016471;
   text-transform: uppercase;
 }
 main {
   width: 1200px;
-  height: 540px;
+  height: 660px;
   background-color: #5CD8E8;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
 }
 main aside {
   width: 45%;
@@ -57,8 +60,8 @@ main aside {
   align-items: center;
 }
 main aside img {
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: 700px;
   object-fit: cover;
 }
 main article {
@@ -82,17 +85,21 @@ main article #main-description #description {
 }
 main article #main-description #description h1 {
   text-align: center;
-  font-family: 'Marker Felt', 'Arial';
+  font-family: 'Fredoka One', cursive;
   font-size: 100px;
   text-align: left;
-  color: #707070;
+  color: #FF64D5;
+  text-shadow: 2px 15px 0 #403B09;
+  -webkit-text-stroke: 5px #403B09;
+  letter-spacing: -6px;
+  padding-left: 20px;
 }
 main article #main-description #description p {
   width: 75%;
   font-family: 'Arial';
   font-size: 22px;
   text-align: center;
-  color: #707070;
+  color: #016471;
   padding: 10px;
 }
 main article #main-description #main-btns {
@@ -105,12 +112,13 @@ main article #main-description #main-btns #download-app-btn {
   width: 213px;
   height: 40px;
   border-radius: 24px;
-  background-color: #3c3c3c;
+  background-color: #ff64d5;
   border: none;
   font-family: Arial;
   font-size: 16px;
   color: #fcfcfc;
   margin-top: 8px;
+  background-image: linear-gradient(to right top, #ff64d5, #ff59b0, #ff578c, #ff5f6a, #fe6c4b);
 }
 main article #main-description #main-btns #create-account-btn {
   margin-left: -10px;
@@ -119,7 +127,7 @@ main article #main-description #main-btns #create-account-btn a {
   font-family: Arial;
   font-size: 16px;
   font-weight: bold;
-  color: #5a5a5a;
+  color: #5642EB;
 }
 #thumbnails {
   width: 1000px;
@@ -135,13 +143,18 @@ main article #main-description #main-btns #create-account-btn a {
   margin: 0 30px;
 }
 #testimonies {
-  margin: 0 auto;
-  width: 1200px;
+  margin: 70px auto;
+  width: 100vw;
+  background-color: #fe6c4b;
+  height: 800px;
+  padding: 50px;
+  background-image: linear-gradient(to right top, #ff64d5, #ff59b0, #ff578c, #ff5f6a, #fe6c4b);
 }
 #testimonies h2 {
   text-align: center;
-  margin: 50px 0;
+  margin: 30px 0;
   font-size: 42px;
+  color: white;
 }
 #testimonies #user-testimonies {
   display: flex;
@@ -149,21 +162,26 @@ main article #main-description #main-btns #create-account-btn a {
   align-items: center;
 }
 #testimonies #user-testimonies .user {
-  border: 2px red solid;
+  width: 340px;
+  height: 500px;
+  background-color: aliceblue;
   display: flex;
+  border-radius: 5px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin: 10px;
+  margin: 20px;
+  box-shadow: 11px 11px 0 #5642EB;
 }
-#testimonies #user-testimonies .user img {
-  width: 300px;
-  height: 300px;
+#testimonies #user-testimonies .user .user-img {
+  width: 240px;
+  height: 240px;
   margin-bottom: 15px;
   object-fit: cover;
 }
 #testimonies #user-testimonies .user h3 {
+  color: #fe6c4b;
   text-transform: uppercase;
   font-size: 18px;
 }
@@ -174,8 +192,77 @@ main article #main-description #main-btns #create-account-btn a {
 #testimonies #user-testimonies .user p {
   font-size: 14px;
 }
+#testimonies #user-testimonies .user #rating {
+  padding: 10px 0 5px;
+}
+#testimonies #user-testimonies .user #rating img {
+  width: 160px;
+  height: 32px;
+}
 section h2 {
   text-align: center;
   margin: 50px 0;
   font-size: 42px;
+}
+section #download-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section #download-container #links .link-container {
+  width: 400px;
+  height: 100px;
+  margin: 10px;
+}
+section #download-container #links .link-container .my-icons {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section #download-container #links .link-container .my-icons span {
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 25px;
+  color: #fe6c4b;
+  text-shadow: 2px 6px 0 #403B09;
+  -webkit-text-stroke: 1px #403B09;
+}
+section #download-container #links .link-container .my-icons span:hover {
+  color: #ff64d5;
+}
+section #download-container #links .link-container .my-icons .app-link {
+  font-size: 5rem;
+  margin-top: 20px;
+  color: #fe6c4b;
+  background: linear-gradient(to right top, #ff64d5, #ff59b0, #ff578c, #ff5f6a, #fe6c4b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section #download-container #download-image img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+footer {
+  width: 100vw;
+  height: 100px;
+  background-color: #FF64D5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #follow-us-icons {
+  display: flex;
+}
+footer #follow-us-icons a > i {
+  color: white;
+  font-size: x-large;
+  margin: 2px;
+}
+footer #follow-us-icons a > i:hover {
+  color: #5CD8E8;
 }
